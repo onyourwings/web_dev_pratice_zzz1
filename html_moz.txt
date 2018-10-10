@@ -1,0 +1,123 @@
+I. Introduction to HTML
+1. Anatomy of an HTLM element
+ 	<p>Hello world</p> 
+ 	- opening tag
+ 	- closing tag
+ 	- content
+ 	--> element
+2. nesting elements
+3. block vesus inline elements
+	block : e.g <p> </p>
+	inline: e.g <em> </em>
+4. empty elements
+	consist only a single tag
+	e.g <img src = "">
+5. Attribute
+	extra infomation about a element
+	attribute should have:
+		attribute name
+		atribute value
+	e.g attribute of <a> : anchor (insert link)
+		href : the link
+		title: extra infomation about that link (appear in tooltip when hovered over)
+		target: open in newtab (target = "_	blank", or in current tab)
+
+	boolen attribute: attribute written without values, they only have one value as their name <input type="text" disabled>
+
+6. Anatomy of a HTML document
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My test page</title>
+  </head>
+  <body>
+    <p>This is my page</p>
+  </body>
+</html>
+
+--><!DOCTYPE html> is the shortest string of characters that counts as a valid doctype
+--> <html></html>: The <html> element. aka root element.
+--> <head></head>: The <head> element. This element acts as a container for all the stuff you want to include on the HTML page that isn't the content you are showing to your page's viewers.
+
+--><title></title>: The <title> element. This sets the title of your page
+--><body></body>: The <body> element. This contains all the content that you want to show to web users when they visit your pag
+
+7. Entity references
+
+	< 	&lt;
+	> 	&gt;
+	" 	&quot;
+	' 	&apos;
+	& 	&amp;
+
+8. HTML comments
+	<!-- and -->
+
+II. The Head and metadata
+Metadata is data that describes data
+
+* Adding an author and description
+ Many <meta> elements include name and content attributes
+
+ <meta name="author" content="Chris Mills">
+ <meta name="description" content="The MDN W">
+
+ --> description used for SEO
+
+  much more types of metadata
+
+ * Adding custom icons to your site
+ 
+ III. HTML text fundamentals
+ 1. heading 
+ 	<h1> </h1>
+ 	...
+ 	<h6> </h6>
+ 2. paragraph
+ 	<p> </p>
+
+ 3. unordered list
+ 	<ul>
+ 		<li> a </li>
+ 		<li> b </li>
+ 		<li> c </li>
+ 	</ul>
+
+ 4. ordered list
+ 	<ol>
+ 		<li> a </li>
+ 		<li> b </li>
+ 		<li> c </li>
+ 	</ol>
+
+ 5. Emphasis and importance
+
+ 	emphasis (italic default)
+ 		<em> this </em>
+ 	importance (bold default)
+ 		<strong> that </strong>
+
+IV. Hyperlink
+ absolute link and relative link
+  absolute link: https://nhungdieubatchot.worlpress.com/articles/hippy.html
+  relative link: ./article/hippy.html
+
+  should use relative link whenever you can to boost up speed
+
+...
+
+V. Document and Website structure
+ 
+ header 			<header>
+ navigation bar 	<nav>
+ main content		<main>
+ 		<article>
+ 		<section>
+ 		<div>
+ sidebar 			<aside>
+ footer				<footer>
+ 
+
+ VI. Multimedia and Embedding 

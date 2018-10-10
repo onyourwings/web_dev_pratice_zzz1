@@ -1,0 +1,68 @@
+git commands, no deep shit
+
+
+1. CHECKOUT and REPOSITORY:
+	(create working copy)
+	1a. local : 
+------->git clone /path/to/repository
+	1b. remote: 
+------->git clone username@host:/path/to/repository
+
+2. WORKFLOW
+	working_dir ---> index ---> HEAD --->(remote server)
+
+	2a. adding files from `working_dir` to `index`
+------->git add <filename>
+------->git add *
+	2b. `index` to `HEAD`
+------->git commit -m "Commit message"
+	2c. `HEAD` to `(remote server)`
+------->git push origin master
+			(where master is `branch`)
+3. BRANCH
+	(used to develop isolated features
+	 master branch is default
+	 branch (verb) is isolate feature
+	 merge (verb) is merge all branch into master)
+
+	 3a. create new branch: 
+------->git checkout -b feature_name
+	 3b. switch back to master
+------->git checkout master
+	 3c. delete branch
+------->git branch -d feature_name
+	 3d. push branch to `remote`
+------->git push origin <branch>
+
+4. UPDATE and MERGE
+	4a. update local repository to newest commit (changes from others in remote)
+------->git pull
+	4b. to merge another branch into your active branch
+------->git merge <branch>
+	4c. before merging changes, you can also preview them by using
+------->git diff <source_branch> <target_branch>
+
+5. TAGGING
+	create tag: 
+------->git tag 1.0.0 1b2e1d63ff
+		-> 1.0.0 version
+		-> 1b2e1d63ff: first 10 characters of the commit id you want to reference with your tag
+
+6. LOG
+	6a. see all log
+------->git log
+	6b. To see only the commits of a certain author:
+------->git log --author=bob
+	6c. To see a very compressed log where each commit is one line:
+------->git log --pretty=oneline
+	6d. to see an ASCII art tree of all the branches
+------->git log --graph --oneline --decorate --all
+	6e. See only which files have changed
+------->git log --name-status
+
+7. REPLACE LOCAL CHANGE
+	7a. did sth wrong -> replace `working_dir` from `HEAD`
+------->git checkout -- <filename>
+	7b. fetch the latest history from the server and point your local master branch
+------->git fetch origin
+------->git reset --hard origin/master
