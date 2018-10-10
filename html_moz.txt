@@ -121,3 +121,28 @@ V. Document and Website structure
  
 
  VI. Multimedia and Embedding 
+ 1. image 
+ 	<img src = "" alt = "" >
+ 	caption image:
+ 		HTML: using <p>
+ 		HTML5: using 
+ 			<figure>
+ 				<img ... >
+ 				<figcaption>this is </figcaption>
+ 			</figure>
+
+ 2. video (in HTML5)
+ <video src="rabbit320.webm" controls>
+  		<p>Your browser doesn't support HTML5 video. Here is a <a href="rabbit320.webm">link to the video</a> instead.</p> 
+	</video>
+
+3. other embedded technologies
+ 1. <iframe> </iframe>
+ embedded content of another website, youtube videos, google map ...
+
+ some more attributes ...
+ in order to improve speed, should set iframe src with Javascript after main content is done loading.
+
+ "You can never be too cautious. If you made it, double-check it anyway. If someone else made it, assume it's dangerous until proven otherwise."
+
+2. <embed> and <object>
